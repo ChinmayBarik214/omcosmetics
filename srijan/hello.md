@@ -1,6 +1,4 @@
 hello
 sab bhul gya mai toh
 remembering
-isugdia\
-lakskhda\\
-;skdkskhjhbujhyuhy
+remembering again so that i actually remember now
