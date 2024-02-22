@@ -1,142 +1,56 @@
 import './App.css'
+import './Product.css'
 import { useState } from 'react'
+import Product from './Product'
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0)
 
-  return (
+    return (
     <>
-      <div class="container">
-        <div class="height product">
-            <div class="prod-desc">
-                <div class="prod-img-container">
-                <img src="images/item1.webp" />
-                </div>
-                <h4>St. Moritz Reversible Jacket</h4>
-                <span>La DoubleJ</span>
-                <span>₹1450 to buy</span>
-            </div>
-            <div class="prod-btn-container">
-                <button class="prod-btn">Add to cart</button>
-            </div>
-        </div>
-        <div class="height product">
-            <div class="prod-desc">
-                <div class="prod-img-container">
-                <img src="images/item2.webp" />
-                </div>
-                <h4>Hollis Dickey Jacket</h4>
-                <span>Veronica Beard</span>
-                <span>₹598 to buy</span>
-            </div>
-            <div class="prod-btn-container">
-                <button class="prod-btn">Add to cart</button>
-            </div>
-        </div>
-        <div class="height product">
-            <div class="prod-desc">
-                <div class="prod-img-container">
-                <img src="images/item3.webp" />
-                </div>
-                <h4>Hazel Sweater</h4>
-                <span>Rachel Antonoff</span>
-                <span>₹294 to buy</span>
-            </div>
-            <div class="prod-btn-container">
-                <button class="prod-btn">Add to cart</button>
-            </div>
-        </div>
-        <div class="height product">
-            <div class="prod-desc">
-                <div class="prod-img-container">
-                <img src="images/item4.webp" />
-                </div>
-                <h4>Bow Drop Earrings</h4>
-                <span>Lele Sadoughi</span>
-                <span>₹145 to buy</span>
-            </div>
-            <div class="prod-btn-container">
-                <button class="prod-btn">Add to cart</button>
-            </div>
-        </div>
-        <div class="height product">
-            <div class="prod-desc">
-                <div class="prod-img-container">
-                <img src="images/item5.webp" />
-                </div>
-                <h4>Dolly Fringe Turtleneck</h4>
-                <span>Central Park West</span>
-                <span>₹152 to buy</span>
-            </div>
-            <div class="prod-btn-container">
-                <button class="prod-btn">Add to cart</button>
-            </div>
-        </div>
-        <div class="height product">
-            <div class="prod-desc">
-                <div class="prod-img-container">
-                <img src="images/item6.webp" />
-                </div>
-                <h4>Nico Blazer</h4>
-                <span>Central Park West</span>
-                <span>₹260 to buy</span>
-            </div>
-            <div class="prod-btn-container">
-                <button class="prod-btn">Add to cart</button>
-            </div>
-        </div>
-        <div class="height product">
-            <div class="prod-desc">
-                <div class="prod-img-container">
-                <img src="images/item7.webp" />
-                </div>
-                <h4>Odense Jacket</h4>
-                <span>Elk</span>
-                <span>₹315 to buy</span>
-            </div>
-            <div class="prod-btn-container">
-                <button class="prod-btn">Add to cart</button>
-            </div>
-        </div>
-        <div class="height product">
-            <div class="prod-desc">
-                <div class="prod-img-container">
-                <img src="images/item8.webp" />
-                </div>
-                <h4>Star Dust Sweater</h4>
-                <span>Perfect Moment</span>
-                <span>₹400 to buy</span>
-            </div>
-            <div class="prod-btn-container">
-                <button class="prod-btn">Add to cart</button>
-            </div>
-        </div>
-        <div class="height product">
-            <div class="prod-desc">
-                <div class="prod-img-container">
-                <img src="images/item9.webp" />
-                </div>
-                <h4>Royce Pullover</h4>
-                <span>Anine Bing</span>
-                <span>₹349 to buy</span>
-            </div>
-            <div class="prod-btn-container">
-                <button class="prod-btn">Add to cart</button>
-            </div>
-        </div>
-        <div class="height product">
-            <div class="prod-desc">
-                <div class="prod-img-container">
-                <img src="images/item10.webp" />
-                </div>
-                <h4>Lennox Bag</h4>
-                <span>Loeffler Randall</span>
-                <span>₹295 to buy</span>
-            </div>
-            <div class="prod-btn-container">
-                <button class="prod-btn">Add to cart</button>
-            </div>
-        </div>
+    <div class="container">
+        <Product id="00000001"
+            title="Boro Plus - Ayurvedic Body Lotion"
+            price={90}
+            image="https://imgur.com/u6kTtXE.jpg"
+            alt="Boro Plus - Ayurvedic Body Lotion"
+            category="Cosmetics"/>
+        <Product id="00000002"
+            title="Vaseline Cocoa glow"
+            price={99}
+            image=""
+            alt="Vaseline Cocoa glow"
+            category="Cosmetics"/>
+        <Product id="00000003"
+            title="Anti Lice Oil - Mediker"
+            price={36}
+            image=""
+            alt="Anti Lice Oil - Mediker"
+            category="Cosmetics"/>
+        <Product id="00000004"
+            title="Nail Color Remover Lakme"
+            price={99}
+            image=""
+            alt="Nail Color Remover Lakme"
+            category="Cosmetics"/>
+        <Product id="00000005"
+            title="Dabur Chyawanprash"
+            price={230}
+            image=""
+            alt="Dabur Chyawanprash"
+            category="Medicine"/>
+        <Product id="00000006"
+            title="SAFI Blood Purifier"
+            price={598}
+            image=""
+            alt="SAFI Blood Purifier"
+            category="Medicine"/>
+        <Product id="00000007"
+            title="Glucon D - Instant energy"
+            price={195}
+            image=""
+            alt="Glucon D - Instant energy"
+            category="Medicine"/>
     </div>
     </>
   )

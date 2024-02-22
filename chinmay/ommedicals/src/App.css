@@ -5,6 +5,11 @@ body {
     display: flex;
     flex-direction: column;
 }
+.ellipses {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 .height {
     height: 540px;
 }
