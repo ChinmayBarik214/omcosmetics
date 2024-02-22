@@ -1,16 +1,13 @@
 import './App.css'
-import './Product.css'
-import { useState } from 'react'
 import Product from './Product'
 
 function App() {
-    const [count, setCount] = useState(0)
-
+    // JS scripts
     return (
     <>
     <div class="container">
         <Product id="00000001"
-            title="Boro Plus - Ayurvedic Body Lotion"
+            title="Ayurvedic Body Lotion - Boro Plus"
             price={90}
             image="https://imgur.com/u6kTtXE.jpg"
             alt="Boro Plus - Ayurvedic Body Lotion"
