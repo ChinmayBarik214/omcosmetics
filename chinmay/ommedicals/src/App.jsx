@@ -1,5 +1,4 @@
 import './App.css'
-import './Product.css'
 import { useState } from 'react'
 import Product from './Product'
 
@@ -12,7 +11,7 @@ function App() {
         <Product id="00000001"
             title="Boro Plus - Ayurvedic Body Lotion"
             price={90}
-            image="https://imgur.com/u6kTtXE.jpg"
+            image="" // https://imgur.com/u6kTtXE.jpg
             alt="Boro Plus - Ayurvedic Body Lotion"
             category="Cosmetics"/>
         <Product id="00000002"
