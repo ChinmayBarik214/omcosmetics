@@ -19,6 +19,11 @@ body {
     justify-content: center;
     background-color: #fff;
 }
+.prod-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 .product {
     padding: 10px;
     display: flex;

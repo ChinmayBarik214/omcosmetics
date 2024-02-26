@@ -1,5 +1,5 @@
 import React from 'react'
-import './Product.css'
+import './product.css'
 
 
 function Product({id, title, image, price, alt, category}) {
@@ -8,7 +8,7 @@ function Product({id, title, image, price, alt, category}) {
         <div className="height product">
             <div className="prod-desc">
                 <div className="prod-img-container">
-                <img src={image} />
+                <img src={image} alt={alt} />
                 </div>
                 <h4 className="ellipses">{title}</h4>
                 <span className="ellipses">{category}</span>
