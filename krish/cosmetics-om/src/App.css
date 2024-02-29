@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.prod-desc {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.height {
+  height: 540px;
+}
+.prod-img-container {
+  height: 400px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #fff;
 }
-
-.App-link {
-  color: #61dafb;
+.product {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product:hover {
+  outline: 2px solid #ddd;
+}
+.product div h4 {
+  margin: 6px 0 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.product div span {
+  font-size: 0.825rem;
+}
+.prod-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prod-btn {
+  cursor: pointer;
+  padding: 8px 16px;
+  margin: 12px 4px;
+  width: 100%;
+  background-color: #1F513F;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  height: 2.5rem;
+}
+.container {
+  box-sizing: border-box;
+  font-size: 40px;
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-gap: 10px;
+  padding: 0 60px;
 }
